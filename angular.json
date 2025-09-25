@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mi-todo-app": {
+    "pixel-app-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,10 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/pixel-app-angular",
+            "index": "src/index.html",
             "browser": "src/main.ts",
+            "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -23,12 +26,8 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
+            
           },
           "configurations": {
             "production": {
@@ -58,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mi-todo-app:build:production"
+              "buildTarget": "pixel-app-angular:build:production"
             },
             "development": {
-              "buildTarget": "mi-todo-app:build:development"
+              "buildTarget": "pixel-app-angular:build:development"
             }
           },
           "defaultConfiguration": "development"

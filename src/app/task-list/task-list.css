@@ -1,0 +1,73 @@
+.pixel-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777;
+}
+
+.pixel-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+}
+
+.task-item:hover {
+  border-color: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.task-item.completed {
+  opacity: 0.8;
+}
+
+.pixel-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #ff5252;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.btn-delete:hover {
+  background: #ffebee;
+}

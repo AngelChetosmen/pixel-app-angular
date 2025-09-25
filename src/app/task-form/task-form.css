@@ -1,0 +1,34 @@
+.pixel-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.pixel-form input {
+  flex: 1;
+  padding: 14px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.pixel-form input:focus {
+  border-color: #4a6cf7;
+}
+
+.btn-add {
+  padding: 14px 20px;
+  background: #00c853;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-add:hover {
+  background: #009624;
+}

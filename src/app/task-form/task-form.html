@@ -1,0 +1,11 @@
+<form (ngSubmit)="addTask()" class="pixel-form">
+  <input
+    [(ngModel)]="newTask"
+    type="text"
+    placeholder="Ej: Comprar leche..."
+    aria-label="Nueva tarea"
+    required
+    name="taskInput"
+  />
+  <button type="submit" class="btn-add">➕ Añadir</button>
+</form>

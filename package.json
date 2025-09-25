@@ -1,5 +1,5 @@
 {
-  "name": "mi-todo-app",
+  "name": "pixel-app-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,6 +23,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.3.1",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
     "@angular/core": "^20.3.0",
